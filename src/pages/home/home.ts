@@ -126,7 +126,7 @@ export class HomePage {
         {
           "row": 3,
           "col": 3,
-          "value": 16,
+          "value": 0,
           "isCorrect": true,
           "image_url":'../assets/imgs/part_16.jpg',
         },
