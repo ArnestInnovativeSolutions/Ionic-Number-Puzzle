@@ -1,5 +1,5 @@
 import { Component,style} from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   data: any;
   moves: number;
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public toastController: ToastController) {
     this.moves=0;
     this.data = [
       [
@@ -132,6 +132,13 @@ export class HomePage {
         },
       ],
     ]
+  }
+  async ToastMessage() {
+    const toast = await this.toastController.create({
+      message: 'Wrong Move',
+      duration: 2000
+    });
+    toast.present();
   }
   generateRandomValue = () => {
     var min = 0, max = 16;
@@ -307,7 +314,8 @@ export class HomePage {
       return
     } else {
       // show message/viber/warn
-      alert('Wrong Move!')
+      //alert('Wrong Move!')
+      this.ToastMessage();
     }
   }
 
