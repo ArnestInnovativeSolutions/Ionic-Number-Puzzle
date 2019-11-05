@@ -1,2 +1,2 @@
 # Ionic-Number-Puzzle
-Simple number arrangement game developed using ionic frmework.
+Simple number arrangement game developed using ionic framework.
