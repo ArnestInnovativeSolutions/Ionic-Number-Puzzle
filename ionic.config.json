@@ -1,0 +1,11 @@
+{
+  "name": "IonicAngularApp",
+  "integrations": {
+    "cordova": {
+      "linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh"
+    },
+    "capacitor": {}
+  },
+  "type": "ionic-angular",
+  "linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh"
+}

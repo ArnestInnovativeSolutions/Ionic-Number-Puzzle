@@ -1,0 +1,29 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "IonicAngularApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh",
+  "cordova": {
+    "preferences": {
+      "ScrollEnabled": "false",
+      "android-minSdkVersion": "19",
+      "BackupWebStorage": "none",
+      "SplashMaintainAspectRatio": "true",
+      "FadeSplashScreenDuration": "300",
+      "SplashShowOnlyFirstTime": "false",
+      "SplashScreen": "screen",
+      "SplashScreenDelay": "3000"
+    }
+  },
+  "server": {
+    "hostname": "127.0.0.1",
+    "allowNavigation": "127.0.0.1",
+    "androidScheme": "http"
+  },
+  "android": {
+    "allowMixedContent": true,
+    "webContentsDebuggingEnabled": true
+  }
+}
